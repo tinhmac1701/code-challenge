@@ -11,7 +11,7 @@
 
 Window environment:
 
-- Clone my code-challenge project at [https://mkt1701@bitbucket.org/mkt1701/code-challenge.git](https://mkt1701@bitbucket.org/mkt1701/code-challenge.git)
+- Clone my code-challenge project at [https://github.com/tinhmac1701/code-challenge.git](https://github.com/tinhmac1701/code-challenge.git)
 - make sure you have installed ubuntu and window WSL
 - The source code path on ubuntu will be "/home/YOUR USER NAME/code-challenge". Example: my path on ubuntu will be "/home/mkt1701/code-challenge"
 - At code-challenge folder, to create alias run this command: alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
