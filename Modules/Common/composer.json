@@ -1,0 +1,23 @@
+{
+    "name": "mkt1701/common",
+    "description": "",
+    "authors": [
+        {
+            "name": "Tinh Mac",
+            "email": "mkt1701@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Common\\": ""
+        }
+    }
+}

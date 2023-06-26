@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "6b75abc6-44e9-4b40-be37-f150704659ea",
+		"name": "Admin Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14471533"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"user1\",\r\n    \"email\" : \"user1@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\",\r\n    \"is_admin\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{end_point}}/api/register",
+					"host": [
+						"{{end_point}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Approve Loan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{end_point}}/api/loan/1",
+					"host": [
+						"{{end_point}}"
+					],
+					"path": [
+						"api",
+						"loan",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Loan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{end_point}}/api/loans",
+					"host": [
+						"{{end_point}}"
+					],
+					"path": [
+						"api",
+						"loans"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
