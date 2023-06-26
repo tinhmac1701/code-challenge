@@ -16,6 +16,7 @@ Window environment:
 - The source code path on ubuntu will be "/home/YOUR USER NAME/code-challenge". Example: my path on ubuntu will be "/home/mkt1701/code-challenge"
 - At code-challenge folder, to create alias run this command: alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 - Run this command "sail up --build -d" to start the docker.
+- Run this command "sail composer install" to install the composer.
 - Run this command "sail php artisan migrate" to generate the database.
 - import all files in the PostMan folder
 - You can check now
